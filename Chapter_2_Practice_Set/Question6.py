@@ -3,3 +3,5 @@
 a=int(input("Enter a number to find its square:"))
 square=a**2
 print("The square of ",a,"is",square)
+
+#Third commit practice
