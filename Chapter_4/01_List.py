@@ -11,3 +11,6 @@ print(friend[0]) #same as arrays and strings
 friend[0]="Mango" #valid
 print(friend[0])
 
+#Unlike strings, lists are mutable
+
+print(friend[0:4]) #slicing works like in strings
