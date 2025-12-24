@@ -6,17 +6,17 @@ You need to write a program to update the Hiscore whenever the game() function b
 
 import random
 
-def game():
+def game(): #Generates a random highscore, assumably sent from the game
     Highscore=random.randrange(1,10000)
     print(f"The current Highscore is {Highscore}\n")
     return Highscore
 
-current_hi=game()
+current_hi=game() 
 
-with open ("Hi-score.txt") as f:
+with open ("Hi-score.txt") as f: #reads the prev highscore
     prev_hi=f.read()
 
-with open ("Hi-score.txt" , "w") as f:
+with open ("Hi-score.txt" , "w") as f: #Writing highscore in the file
     if(prev_hi==""):
         f.write(str(current_hi))
         print("The file is empty, this it the first highscore saved!") 

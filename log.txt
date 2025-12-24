@@ -1,0 +1,2 @@
+Log file contains:
+Python 3.12 
